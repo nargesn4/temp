@@ -1,6 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
-// import { moveIn } from '../router.animations';
+//import { moveIn } from '../router.animations';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app';
 
@@ -44,10 +44,6 @@ export class LoginComponent implements OnInit {
         this.error = err;
       })
   }
-
-
-
-
   ngOnInit() {
   }
 

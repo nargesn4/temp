@@ -16,10 +16,7 @@ export class SignupComponent implements OnInit {
   state: string = '';
   error: any;
 
-  constructor(public af: AngularFireAuth,private router: Router) {
-
-  }
-
+  constructor(public af: AngularFireAuth,private router: Router) {}
   onSubmit(formData) {
     if(formData.valid) {
       console.log(formData.value);
@@ -27,7 +24,7 @@ export class SignupComponent implements OnInit {
     .then(
         (success) => {
           console.log(success);
-          this.router.navigate(['/login'])
+          this.router.navigate(['/members'])
         }).catch(
         (err) => {
           console.log(err);
@@ -35,7 +32,6 @@ export class SignupComponent implements OnInit {
         })
     }
   }
-
   ngOnInit() {
   }
 

@@ -12,7 +12,7 @@ import {config} from "rxjs";
 import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
 import { SignupComponent } from './signup/signup.component';
-import { MemberComponent } from './member/member.component';
+import { MembersComponent} from './members/members.component';
 import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,7 +32,7 @@ export const firebaseConfig = {
     LoginComponent,
     EmailComponent,
     SignupComponent,
-    MemberComponent
+    MembersComponent
   ],
   imports: [
     BrowserModule,
